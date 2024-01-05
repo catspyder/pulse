@@ -12,13 +12,14 @@ function App() {
   const url = "http://localhost:3000/api/data";
   useEffect(() => {
     fetch(url).then(res => res.json()).then(data => {
-      
+      // console.log(data);
+      updateData(data)
     })
 
   },[])
   return (
     <div className="App">
-      <Card className="big-card"/>
+      <Card className="big-card">{data}</Card>
     </div>
   );
 }
