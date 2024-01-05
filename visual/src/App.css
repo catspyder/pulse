@@ -1,7 +1,7 @@
 
 
 body{
-  background-color: red;
+  background-color: rgb(87, 237, 175);
   display: flex;
   justify-content: center;  
   align-items: center;  
@@ -10,7 +10,7 @@ body{
 Card{
   /* flex: 5;; */
 height: 800px;
-width: 80vw;
-margin: 0 auto;
+width: 80px;
+/* margin: 0 auto; */
 
 }

@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
 const pgp = require('pg-promise')();
-const db = pgp('postgres://username:password@localhost:5432/database');
+const db = pgp('postgres://username:7263@localhost:5432/database');
 
 // Define your API endpoint
 app.get('/api/data', async (req, res) => {
     try {
         // Query the database
-        const data = await db.any('SELECT * FROM your_table');
+        const data = await db.any('SELECT * FROM reminder');
 
         // Send the response
         res.json(data);
